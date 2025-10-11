@@ -14,7 +14,8 @@ pip install \
   huggingface_hub \
   fastapi \
   python-multipart \
-  uvicorn
+  uvicorn \
+  hf_transfer
 
 pip install git+https://github.com/huggingface/diffusers.git
 huggingface-cli login #허깅페이스 로그인
