@@ -98,7 +98,7 @@ def generate_images(
     prompt: str,
     style: str,
     negative_prompt: str = "no watermark, captions, extra words, low quality",
-    num_images: int = 1,
+    num_images: int = 1, height: int = 1024, width: int = 1024
 ):
 
     global pipe
@@ -112,8 +112,8 @@ def generate_images(
         negative_prompt=negative_prompt,
         num_inference_steps=100,   
         guidance_scale=10,        
-        height=1024,
-        width=1024,
+        height=heigth,
+        width=width,
         num_images_per_prompt=num_images
     )
     return results.images
