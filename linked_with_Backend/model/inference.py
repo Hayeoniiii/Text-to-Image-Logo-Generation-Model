@@ -112,7 +112,7 @@ def generate_images(
         negative_prompt=negative_prompt,
         num_inference_steps=100,   
         guidance_scale=10,        
-        height=heigth,
+        height=height,
         width=width,
         num_images_per_prompt=num_images
     )
