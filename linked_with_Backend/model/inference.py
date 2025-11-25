@@ -97,7 +97,7 @@ def _ensure_style(style: str):
 def generate_images(
     prompt: str,
     style: str,
-    negative_prompt: str = "no watermark, captions, extra words, low quality",
+    # negative_prompt: str = "no watermark, captions, extra words, low quality",
     num_images: int = 1, height: int = 1024, width: int = 1024
 ):
 
@@ -109,7 +109,7 @@ def generate_images(
 
     results = pipe(
         prompt=prompt,
-        negative_prompt=negative_prompt,
+        # negative_prompt=negative_prompt,
         num_inference_steps=100,   
         guidance_scale=10,        
         height=height,
