@@ -14,13 +14,13 @@ def startup_event():
 async def generate_logo(
     prompt: str = Body(...),
     style: str = Body(..., embed=True),         
-    negative_prompt: str = Body("", embed=True),
+    # negative_prompt: str = Body("", embed=True),
     num_images: int = Body(1, embed=True),
     heigth: int = Body(1024, embed=True),
     width: int = Body(1024, embed=True)
 ):
     try:
-        images = generate_images(prompt, style, negative_prompt, num_images, heigth, width)
+        images = generate_images(prompt, style, num_images, heigth, width)
         encoded_images = []
 
         for img in images:
