@@ -3,9 +3,10 @@
 pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 pip install \
-  transformers==4.47.0 \
-  accelerate==1.2.0 \
-  peft>=0.14.0 \
+  transformers==4.43.3 \
+  diffusers==0.30.2 \
+  accelerate==1.1.0 \
+  peft==0.11.1 \
   wandb \
   datasets \
   packaging \
