@@ -16,11 +16,11 @@ async def generate_logo(
     style: str = Body(..., embed=True),         
     # negative_prompt: str = Body("", embed=True),
     num_images: int = Body(1, embed=True),
-    heigth: int = Body(1024, embed=True),
+    height: int = Body(1024, embed=True),
     width: int = Body(1024, embed=True)
 ):
     try:
-        images = generate_images(prompt, style, num_images, heigth, width)
+        images = generate_images(prompt, style, num_images, height, width)
         encoded_images = []
 
         for img in images:
